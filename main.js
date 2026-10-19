@@ -50,12 +50,16 @@ function updateProfile(data) {
   const sortType = data["sort"];
 
   if (dlcHave == "true") {
-    if (unitGenNum > units.length + dlcUnits.length) {
+    if (unitGenNum - 1 > units.length + dlcUnits.length) {
       unitGenNum = units.length + dlcUnits.length;
+    } else {
+      unitGenNum--;
     }
   } else {
-    if (unitGenNum > units.length) {
+    if (unitGenNum - 1 > units.length) {
       unitGenNum = units.length;
+    } else {
+      unitGenNum--;
     }
   }
 
