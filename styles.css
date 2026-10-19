@@ -1,0 +1,156 @@
+/* REQUIRED. Do not modify or delete this * selector. */
+* {
+  box-sizing: border-box;
+}
+
+/* REQUIRED. Do not modify or delete this body selector. */
+body {
+  margin: 0;
+  background-color: rgb(27, 80, 139);
+}
+
+.x-button {
+  width: auto;
+  height: 30px;
+  margin: 0;
+}
+
+/* RECOMMENDED. Begin page layout and styling on main. */
+main {
+
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  /* Overrides problematic h1 property*/
+  h1 {
+    margin-bottom: 0;
+    font-size: 2vh;
+    
+  }
+/* Flexbox for headings*/
+  .headingGroup {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Styling for 'Kiera's Mugs*/
+
+  .heading {
+    margin: 4rem;
+    text-align: center;
+    font-size:40px;
+    background-color: #FFFFFF;
+    padding-top: 10px;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  /*Styling for 'Emporium'*/
+  .heading2 {
+    margin: 4rem;
+    text-align: center;
+    font-size:40px;
+    background-color: #FFFFFF;
+    padding: 0px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;  }
+
+.settings {
+  width: 100px;
+  height: 36px;
+  margin: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+ 
+}
+
+#rand-container {
+  max-width: 75vw;
+  width: 100%;
+  margin: 0 auto;
+}
+
+td {
+
+  padding: 10px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  border: 10px solid;
+
+  background-color: #FFFFFF;
+}
+
+/* Styling for modal*/
+#modal {
+  width: 30rem;
+  border: 10px solid #73002D;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+} 
+
+
+/* RECOMMENDED. Enforces fluid images. */
+img {
+  width: 18vh;   /* Prevents the image from stretching larger than its actual size */
+  height: 10vh;      /* Keeps the image from getting distorted or squished */
+  display: block;    /* Removes annoying extra whitespace at the bottom of images */
+  object-fit: cover;    /* Auto-crops the image to fill the 100% x 250px box without distortion */
+  object-position: center; /* Ensures the crop happens from the center of the image */
+}
+
+/* REQUIRED. Default media query breakpoint. Add selectors as needed. 
+Keep at the bottom of this CSS file. */
+@media (min-width: 640px) {
+
+  main {
+
+      /* Flexbox for headings*/
+    .headingGroup {
+    display: flex;
+    flex-direction:row;
+    gap: 0;
+    background-color: #FFFFFF;
+    justify-content: center;
+  }
+/* Styling for 'Kiera's Mugs*/
+  .heading {
+
+    text-align: center;
+    
+    font-size:40px;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 20px;
+    padding-right: 5px;
+
+   
+  }
+/* Styling for 'Emporium*/
+  .heading2 {
+
+    text-align: center;
+    font-size:40px;
+    background-color: #FFFFFF;
+      margin: 0;
+    padding: 20px;
+     padding-left: 5px;
+
+     }
+
+     
+ /* Styling of the whole grid containing the mugs*/
+  .rand-container {
+
+  
+}
+
+  }
+  
+}
+

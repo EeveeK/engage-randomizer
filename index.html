@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- REQUIRED. Do not modify, move, or delete these <link> or <script> tags. -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="handleForm.js"></script>
+    <script src="data.js"></script>
+    <script src="randomizer.js"></script>
+    <script src="main.js" defer></script>
+    <!-- Add additional <link> or <script> tags here if needed. -->
+    <title>Engage Randomizer</title>
+</head>
+
+<body>
+
+    <!-- This dialog will only be visible if opened from JavaScript. -->
+    <dialog id="modal">
+        <!-- Add inputs and other elements to build your form. -->
+
+        <!--Close Button-->
+        <img id="x-button" class="x-button" src="images/red-x-icon.webp" alt="">
+        <form id="profile-form" method="dialog">
+
+            <!--Names and Bio Section-->
+            <div class="top-section">
+
+                <h1>Choose your settings for randomization</h1>
+
+
+                <!--Gender Selection-->
+
+                <div class="icons-title">
+                    <h3>Choose your Alear: </h3>
+                    <div class="icon-select">
+
+                        <div class="femalebutton">
+
+                            <label for="male">Male Alear</label>
+
+
+                            <input type="radio" id="male-icon" name="gender" value="male" required checked="checked">
+
+                            <label for="male">Female Alear</label>
+
+
+                            <input type="radio" id="female-icon" name="gender" value="female" required>
+
+
+
+                        </div>
+
+                    </div>
+
+
+                    <h3>Do you have the DLC?</h3>
+
+                    <div class="dlcbutton">
+
+                        <label for="dlc">Yes</label>
+
+
+                        <input type="radio" id="dlc" name="dlc" value="true" required>
+
+                        <label for="male">No</label>
+
+
+                        <input type="radio" id="dlc" name="dlc" value="false" required checked="checked">
+
+                    </div>
+
+                    <h3>Raise chances for Personal Classes?</h3>
+
+
+                    <div class="uniqueclassbutton">
+
+                        <label for="uniq" class="tooltip">0 - 100% Boost</label>
+
+
+                        <input type="range" id="uniq" name="uniq" value="0" required>
+
+
+
+
+                    </div>
+
+                    <h3>How would you like the results to be displayed?</h3>
+                    <div class="uniqueclassbutton">
+
+                        <label for="sort-ABC">Alphabetical</label>
+
+
+                        <input type="radio" id="sort" name="sort" value="ABC" required>
+
+                        <label for="sort-Chrono">Recruitment Order</label>
+
+
+                        <input type="radio" id="sort" name="sort" value="Chrono" required checked="checked">
+                    </div>
+
+                    <br>
+
+                    <label for="numUnit">How many units would you like to generate? </label>
+                    <input type="number" id="numUnit" name="numUnit" value="14">
+
+                    <br>
+                    <br>
+
+                </div>
+
+
+
+                <input type="submit" value="Submit">
+        </form>
+    </dialog>
+
+    <!-- Build content inside the <main> tags. -->
+    <main>
+
+        <input type="button" onclick="modal.showModal()" value="Settings" />
+
+        <input type="button" id="Reroll" onclick="Reroll()" value="Reroll" />
+
+        <input type="button" onclick="" value="Screenshot Mode" />
+
+
+        <!--title flexbox-->
+        <table style="width:100%" ; id="rand-container" class="rand-container">
+
+        </table>
+
+
+    </main>
+</body>
+
+</html>
