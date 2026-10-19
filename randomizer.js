@@ -127,7 +127,7 @@ function Randomizer(dlcHave, unitGenNum, gender, boostPersClass, PERSCLASSBIASNU
 
   let finishedRandArray = [];
 
-  for (let i = 0; i < unitGenNum - 1; i++) {
+  for (let i = 0; i < unitGenNum; i++) {
 
     // Duplicate Prevention Logic
     var invalid = true;

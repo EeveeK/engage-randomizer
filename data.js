@@ -229,7 +229,7 @@ const uniqueClasses = [
   },
   {
 
-    className: "Tireur d’élite",
+    className: "Tireur d'élite",
     uniqueClass: "Alcryst",
     flying: false,
   },
@@ -274,7 +274,6 @@ const uniqueClasses = [
     className: "Melusine",
     uniqueClass: "Zelestia",
     flying: true,
-    flying: false,
   },
   {
 
